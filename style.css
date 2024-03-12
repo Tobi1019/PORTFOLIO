@@ -1,0 +1,360 @@
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.5rem;
+  }
+  :root{
+   --big-font:5.3rem;
+   --h2-font:4.2rem;
+   --p-font:1.1rem;
+
+  }
+.logo{
+    color: #dd8ea4;
+    font-family: "Satisfy", cursive;
+    font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+}
+  header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:white;
+    padding: 25px 15%;
+    transition-duration: .3s;
+  }
+  
+  .navbar{
+    display: flex;
+  }
+  .navbar li{
+    position: relative;
+  }
+  .navbar a{
+    color:#31383f;
+    font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:800;
+  font-style: normal;
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  .navbar a::after{
+    content:"";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+    background-color:#dd8ea4;
+  }
+  .navbar a:hover::after{
+    width: 100%;
+    color: #ba121d;
+  } 
+section{
+    padding: 120px 15%;
+  }
+  .home{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    background-color: #f2e9eb;
+  }
+  .home-text{
+    text-align: center;
+  }
+  .home-text h1{
+    margin: 20px 0px 20px;
+    font-size: 90px;
+    color: #dd8ea4;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .home-text h3{
+    color: #31383f;;
+    margin-bottom: 55px;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+  }
+  .home-text h4{
+    color:white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  
+
+
+.about{
+    background:white;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap:2rem;
+}
+.about-img img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+.about-text h2{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color:#dd8ea4;
+    font-family: "Nunito", sans-serif;
+
+}
+.about-text h5{
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    color: purple;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-text H5 span{
+    color:#ba121d;
+   font-family: "Nunito", sans-serif;
+}
+.about-text p{
+    color: #31383f;
+    letter-spacing: 1px;
+    line-height: 28px;
+    max-width: 590px;
+    font-size: 20px;
+    font-family: "Nunito", sans-serif;
+    margin-bottom: 45px;
+}
+  
+.btn{
+    display: inline-block;
+    background: #dd8ea4;
+    color: white;
+    border: 2px solid transparent;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 35px;
+    transition: ease .35s;
+}
+.btn:hover{
+    transform: translateY(-8px);
+    border: 2px solid #f2e9eb;
+    background: transparent;
+    color: #31383f;
+}
+
+.box{
+display: grid;
+grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap:1rem;
+}
+.Webdev{
+    background-color: #f2e9eb;
+}
+.center h2{
+    font-size: 50px;
+    margin-top: 15px;
+    color: #31383f;
+    font-family: "Nunito", sans-serif;
+}
+.center h5{
+    font-size: 25px;
+    margin-top: 15px;
+    color: #dd8ea4;
+    font-family: "Nunito", sans-serif;
+    
+}
+.center p{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+
+.Product{
+    background-color:white;
+}
+.center{
+    text-align:center;
+    color:yellow;
+}
+.center h2{
+    font-size: 50px;
+    margin-top: 15px;
+}
+.center p{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+
+.Graphics{
+    background-color: rgb(24, 19, 19);
+}
+.center{
+    text-align:center;
+    color:yellow;
+}
+.center h2{
+    font-size: 50px;
+    margin-top: 15px;
+}
+.center p{
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+}
+
+
+
+
+.projects-content{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(370px,auto));
+    grid-gap: 2rem;
+    align-items: center;
+    margin-top: 4.5rem;
+    cursor: pointer;
+}
+.box img{
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all .30s;
+}
+.box p{
+    color: grey;
+    font-size: var(--p-font);
+    margin-bottom: 15px;
+}
+.small{
+    font-size:smaller;
+    font-weight: 200;
+}
+.box h5{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.box img:hover{
+    transform: scale(1.1);
+}
+.contact{
+    background:var(--bg-color);
+    color:white;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap: 3rem;
+}
+.contact-img img{
+    max-width: 100%;
+    width: 700px;
+    height: auto;
+    border-radius: 10px;
+}
+.contact-form h2{
+    font-size: var(--h2-font);
+    margin-bottom: 15px;
+    color: #ba121d;
+}
+.contact-form p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: var(--p-font);
+    margin-bottom: 4.1rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,
+form textarea{
+    width: 100%;
+    padding: 20px;
+    border: none;
+    outline: none;
+    background: var(--second-bg-color);
+    color: var(--text-color);
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+
+}
+
+.contact-form textarea{
+    resize:none;
+    height: 200px;
+
+}
+.contact-form form .send{
+    display: inline-block;
+    background: var(--main-color);
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 200px;
+    transition: ease .35s;
+    text-transform: uppercase;
+}
+.contact-form form .send:hover{
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+.footer{
+    text-align: center;
+    background: var(--second-bg-color);
+    padding: 34px;
+    color: white;
+}
+.footer p{
+    font-size: 17px;
+    color: var(--second-color);
+    letter-spacing: 1px;
+    text-align: center;
+}
+progress{
+    height: 5px;
+    border-radius: 20px;
+    width:80%;
+}
+progress::-webkit-progress-value {
+    background-color: var(--main-color);
+    
+    
+}
+progress::-webkit-progress-bar {
+    background-color: whitesmoke;
+   
+}
+
