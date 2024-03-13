@@ -343,18 +343,110 @@ form textarea{
     letter-spacing: 1px;
     text-align: center;
 }
-progress{
-    height: 5px;
-    border-radius: 20px;
-    width:80%;
-}
-progress::-webkit-progress-value {
-    background-color: var(--main-color);
-    
-    
-}
-progress::-webkit-progress-bar {
-    background-color: whitesmoke;
-   
-}
 
+/* For medium screens (tablets) */
+@media only screen and (max-width: 992px) {
+    header {
+      padding: 25px 10%;
+    }
+    .home-text h1 {
+      font-size: 60px;
+    }
+    .home-text h3 {
+      font-size: 30px;
+    }
+    .about-img img {
+      width: 100%;
+    }
+    .about-text h2 {
+      font-size: 40px;
+    }
+    .about-text h5 {
+      font-size: 24px;
+    }
+    .about-text p {
+      font-size: 18px;
+    }
+    .center h2 {
+      font-size: 40px;
+    }
+    .center h4 {
+      font-size: 24px;
+    }
+    .center a {
+      font-size: 20px;
+    }
+    .center p {
+      font-size: 16px;
+    }
+    .box img {
+      width: 100%;
+    }
+    .contact-img img {
+      width: 100%;
+    }
+    .contact-form h2 {
+      font-size: 40px;
+    }
+    .contact-form p {
+      font-size: 18px;
+    }
+    .contact-form form input,
+    .contact-form textarea {
+      font-size: 16px;
+    }
+  }
+  
+  /* For small screens (phones) */
+  @media only screen and (max-width: 768px) {
+    header {
+      padding: 25px 5%;
+    }
+    .home-text h1 {
+      font-size: 40px;
+    }
+    .home-text h3 {
+      font-size: 24px;
+    }
+    .about-text h2 {
+      font-size: 30px;
+    }
+    .about-text h5 {
+      font-size: 20px;
+    }
+    .about-text p {
+      font-size: 16px;
+    }
+    .center h2 {
+      font-size: 30px;
+    }
+    .center h4 {
+      font-size: 20px;
+    }
+    .center a {
+      font-size: 18px;
+    }
+    .center p {
+      font-size: 14px;
+    }
+    .box p {
+      font-size: 14px;
+    }
+    .box h5 {
+      font-size: 16px;
+    }
+    .contact-form h2 {
+      font-size: 30px;
+    }
+    .contact-form p {
+      font-size: 16px;
+    }
+    .contact-form form input,
+    .contact-form textarea {
+      font-size: 14px;
+    }
+    .footer p {
+      font-size: 14px;
+    }
+  }
+  
